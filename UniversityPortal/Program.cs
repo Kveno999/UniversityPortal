@@ -15,6 +15,8 @@ builder.Services.AddDbContext<DataContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
     );
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
+builder.Services.AddScoped<ILecturerRepository, LecturerRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -8,4 +8,5 @@ public interface IStudentRepository
     Student GetStudent(int id);
     bool StudentExists(int id);
     bool CreateStudent(Student student);
+    decimal? CalculatePaymentPrice(int id);
 }

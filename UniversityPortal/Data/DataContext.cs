@@ -11,4 +11,6 @@ public class DataContext : DbContext
     }
     
     public DbSet<Student> Students { get; set; }
+    public DbSet<Subject> Subjects { get; set; }
+    public DbSet<Lecturer> Lecturers { get; set; }
 }
